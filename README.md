@@ -5,21 +5,22 @@ The Standard Card Game is a Java library that provides functionality for generat
 
 ## Game Rules 
 
-In this game, a player randomly draws a hand of 10 cards.
-Each card has a suit ("Diamonds", for example) and a value ("10", for example).
-You are asked to:
+In this card game, a player will randomly draw a hand of 10 cards. Each card consists of a suit (e.g., "Diamonds") and a value (e.g., "10"). The objective is to construct a hand of cards and display both the unsorted and sorted versions of the hand.
 
-Construct a random order of suits. The order of the suits is, for example, one of the following:
+The game follows the following rules:
 
--  Diamonds, Hearts, Spades, Clubs
+1. Construct a random order of suits from the following options:
+   2. Diamonds, Hearts, Spades, Clubs
+3. Construct a random order of values from the following options:
+   4. Ace, 5, 10, 8, 6, 7, 4, 2, 3, 9, Queen, King, Jack 
+5. Build a hand of 10 cards by randomly selecting cards from the available suits and values. 
+6. Display the unsorted hand on the screen, showing the cards in the order they were drawn. 
+7. Sort the hand of cards by suit and value using the custom order defined in steps 1 and 2. 
+8. Display the sorted hand on the screen, showing the cards in any order defined by the custom suit and value order.
 
-Construct a random order of values. The order of values is, for example, one of the following:
+By following these rules, players can experience the randomness of drawing a hand of cards and observe the sorting of the hand based on suit and value.
 
-- Ace, 5, 10, 8, 6, 7, 4, 2, 3, 9, Queen, King, Jack
-
-Build a hand of 10 cards at random.
-
-Show the "unsorted" hand on the screen, then the sorted hand in any order defined in steps 1 and 2. That is, you must sort the cards by suit and value.
+Feel free to make any further adjustments or additions to the text as needed.
 
 ## Features
 
