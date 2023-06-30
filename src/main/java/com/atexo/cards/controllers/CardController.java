@@ -52,6 +52,6 @@ public class CardController {
         System.out.println("Hand sorted: ");
         sortedHand.forEach(System.out::println);
 
-        return new GameResponse(hand, sortedHand);
+        return new GameResponse(hand, suitOrder, valueOrder, sortedHand);
     }
 }

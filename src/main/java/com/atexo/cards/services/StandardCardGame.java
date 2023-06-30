@@ -8,6 +8,7 @@ import com.atexo.cards.services.interfaces.CardGame;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Component
 public class StandardCardGame implements CardGame {
@@ -61,10 +62,11 @@ public class StandardCardGame implements CardGame {
         if (suitOrder.size() != Suit.values().length || valueOrder.size() != Value.values().length) {
             throw new IllegalArgumentException("Invalid suit or value order list size");
         }
-        List<Card> sortedHand = new ArrayList<>(hand);
-        sortedHand.sort(Comparator.comparingInt(card ->
-                suitOrder.indexOf(card.suit()) * valueOrder.size() + valueOrder.indexOf(card.value())));
-        return sortedHand;
+
+        return hand.stream()
+                .sorted(Comparator.comparingInt(card ->
+                        suitOrder.indexOf(card.suit()) * valueOrder.size() + valueOrder.indexOf(card.value())))
+                .collect(Collectors.toList());
     }
 
     @Override
