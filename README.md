@@ -10,9 +10,9 @@ In this card game, a player will randomly draw a hand of 10 cards. Each card con
 The game follows the following rules:
 
 1. Construct a random order of suits from the following options:
-   2. Diamonds, Hearts, Spades, Clubs
+   - Diamonds, Hearts, Spades, Clubs
 3. Construct a random order of values from the following options:
-   4. Ace, 5, 10, 8, 6, 7, 4, 2, 3, 9, Queen, King, Jack 
+   - Ace, 5, 10, 8, 6, 7, 4, 2, 3, 9, Queen, King, Jack 
 5. Build a hand of 10 cards by randomly selecting cards from the available suits and values. 
 6. Display the unsorted hand on the screen, showing the cards in the order they were drawn. 
 7. Sort the hand of cards by suit and value using the custom order defined in steps 1 and 2. 
